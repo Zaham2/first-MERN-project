@@ -1,0 +1,13 @@
+15082023	20:54:43	cd9139b0-6b2b-4153-a7fd-fcf72fcbc680	Error: Not allowed by CORS	GET	/	null
+15082023	20:57:05	3cbf2e86-0cf9-42a6-8b87-e027805051a1	Error: Not allowed by CORS	GET	/	null
+15082023	21:10:21	b550d621-8acc-4761-8761-c0b172f51f98	Error: Not allowed by CORS	OPTIONS	/	https://www.google.com
+15082023	21:10:21	7d523b3c-8dbc-45d4-a8a8-9763aa45d10f	Error: Not allowed by CORS	GET	/	https://www.google.com
+24082023	09:39:58	b44f2a23-edc1-4838-9d55-00fbd32cc6b9	SyntaxError: Unexpected token } in JSON at position 54	POST	/users	undefined
+24082023	10:14:36	e443089c-20fe-4a14-bb5b-d7de7a9b1609	SyntaxError: Unexpected token { in JSON at position 6	PATCH	/users	undefined
+25082023	15:31:25	e5f1d348-2272-4bfb-8b8b-d763233efc5e	CastError: Cast to ObjectId failed for value "64e6fa9ff71bf78d5a709d9998" (type string) at path "_id" for model "User"	PATCH	/users	undefined
+25082023	15:32:37	6f49d8bc-fd0f-4ca7-bfc5-0dd75fb2c412	CastError: Cast to ObjectId failed for value "64e6fa9ff71bf78d5a709d971" (type string) at path "_id" for model "User"	PATCH	/users	undefined
+25082023	15:37:18	293af269-cd53-4675-9bb8-c7822401b9bf	SyntaxError: Unexpected string in JSON at position 117	POST	/users	undefined
+25082023	15:38:47	5fb5cef5-258e-4f48-9dd3-33a1aca32120	CastError: Cast to ObjectId failed for value "64e6fa9ff71bf78d5a709d9711" (type string) at path "user" for model "Note"	DELETE	/users	undefined
+25082023	15:39:12	644c901a-686a-478a-afbb-1d89807555aa	ReferenceError: Cannot access 'user' before initialization	DELETE	/users	undefined
+25082023	15:39:28	f59217b0-1831-4493-b66c-96341e1dc58c	ReferenceError: Cannot access 'user' before initialization	DELETE	/users	undefined
+25082023	15:40:29	9bec1217-374e-4c26-bcd9-268c500941a6	ReferenceError: Cannot access 'user' before initialization	DELETE	/users	undefined
