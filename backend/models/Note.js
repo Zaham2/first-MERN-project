@@ -1,31 +1,31 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 const AutoIncrement = require('mongoose-sequence')(mongoose)
 
-const noteSchema = new mongoose.Schema({
-    user: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
-        required: true
+const noteSchema = new mongoose.Schema(
+    {
+        user: {
+            type: mongoose.Schema.Types.ObjectId,
+            required: true,
+            ref: 'User'
+        },
+        title: {
+            type: String,
+            required: true
+        },
+        text: {
+            type: String,
+            required: true
+        },
+        completed: {
+            type: Boolean,
+            default: false
+        }
     },
-    title: {
-        type: String,
-        required: true
-    },
-    text: {
-        type: String,
-        required: true
-
-    },
-    completed: {
-        type: Boolean,
-        default: false
+    {
+        timestamps: true
     }
-},
-{
-    timestamps: true  //mongoose will add timestamps automatically using this
-}
 )
-//gonna rebuild this using prisma
+
 noteSchema.plugin(AutoIncrement, {
     inc_field: 'ticket',
     id: 'ticketNums',

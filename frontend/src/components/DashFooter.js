@@ -14,7 +14,7 @@ const DashFooter = () => {
         goHomeButton = (
             <button className='dash-footer__button icon-button'
             title='Home'
-            onclick={onGoHomeClicked}
+            onClick={onGoHomeClicked}
             >
                 <FontAwesomeIcon icon={faHouse} />
             </button>

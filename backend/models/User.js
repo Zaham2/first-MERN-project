@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema({
     username: {
@@ -12,12 +12,10 @@ const userSchema = new mongoose.Schema({
     roles: [{
         type: String,
         default: "Employee"
-
     }],
     active: {
         type: Boolean,
         default: true
-        
     }
 })
 
